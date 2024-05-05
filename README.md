@@ -1,2 +1,2 @@
-# GMNKLabs-Website
-GEOMANiK Labs Official Website
+# GeoMANiKLabsWeb
+ Official GeoMANiK Labs Website

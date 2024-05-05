@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+    h1{
+		text-align: center;
+		color:#220001;
+    }
+    h2{
+		text-align:center;
+		color:#220001;
+    }
+    p{
+		text-align:center;
+    }
+    .center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+    }
+	.container{
+		display:grid;
+		align-items:center;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.text{
+		font-size:15px;
+	}
+	
+	.navbar{
+		display: flex;
+		position: sticky;
+		align-items: center;
+		justify-content: space-between;
+		top: 0px;
+		
+		background-blend-mode: darken;
+		background-size: cover
+		color: white;
+		padding: 10px 20px;
+	}
+	
+	.ul{
+		display:flex;
+		flex-direction:row;
+	}
+	.li{
+		display:inline-block;
+		padding: 5px 5px;
+	}
+	
+	.a{
+		font-weight: normal;
+		padding: 10px 5px;
+		font-size: .80em;
+	}
+
+  </style>
+  
     <title>Home Page</title>
-    <body>
-        <h1>Welcome To GeoMANiK Labs</h1>
-        <img src="templates/Images/Misc/NASALights.jpg">
+    <body style="background-image: url('static/BackgroundImage.png');">
+		<div class="container">
+			<div class="image">
+				<img src="static/Logo0.png" width="120" height="70" class="left-side">
+			</div>
+			<div class="text">
+				<h1>Welcome To GeoMANiK Labs</h1>
+			</div>
+			<div>
+				<nav class="navbar">
+				  <ul class="ul">
+					<li class="li"><a href="#home">Home</a></li>
+					<li class="li"><a href="#about">About</a></li>
+					<li class="li"><a href="#products">Products</a></li>
+					<li class="li"><a href="#solutions">solutions</a></li>
+					<li class="li"><a href="#contact">Contact</a></li>
+					<li class="li"><a href="#login">Login</a></li>
+				  </ul>
+				</nav>
+			</div>
+		</div><br>
+	<div>
+       		 <img src="static/NetGlobe.jpg" width="1336" height="350" class="center">
+	</div>
+      <h1>
+          Engineering Geospatial Solutions
+      </h1>
+	  <div>
+      <h2 class="text">  
+          At GeoMANiK Labs, we are a team of geospatial engineers and scientists who are passionate about building reliable infrastructure for the future. We are committed to using our expertise to solve complex problems and create innovative solutions that will overcome challenges in the realm of remote sensing, real-time geospatial data analytics, and geospatial data visualization. 
+	  </h2>
+	  </div><br>
     </body>
   </head>
 </html>  
